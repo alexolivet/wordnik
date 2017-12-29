@@ -8,6 +8,7 @@ $(document).ready(function() { // start document ready
             method: 'GET',
             //A string containing the URL to which the request is sent.
             url: URL,
+            async: false,
             // the type of data we expect back
             dataType: 'jsonp',
             //An object of numeric HTTP codes and functions to be called when the response has the corresponding code.
