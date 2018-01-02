@@ -1,54 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
 body {
+    height: 100%;
+    background-color: #eee;
     margin: 0;
-    padding: 0;
-    line-height: 1.5em;
 }
 
-b {
-    font-size: 110%;
+#container {
+    height: 100%;
 }
 
-em {
-    color: red;
-}
-
-
-#topsection {
-    background: #EAEAEA;
-    height: 90px;
-    /*Height of top section*/
-}
-
-#topsection h1 {
-    margin: 0;
-    padding-top: 15px;
-}
-
-#contentwrapper {
+.header {
+    width: 50%;
     float: left;
-    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    position: relative;
+    bottom: 0;
 }
 
-#contentcolumn {
-    margin: 0 15% 0 20%;
-    /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
+.content {
+    width: 50%;
+    background-color: #333;
+    float: right;
+    overflow: auto;
+    position: relative;
+    margin-bottom: 0;
+    color: #eee;
 }
 
-#leftcolumn {
-    float: left;
-    width: 20%;
-    /*Width of left column in percentage*/
-    margin-left: -100%;
-    background: #C8FC98;
+p {
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    padding: 30px;
+    font-size: 16pt;
+    text-indent: 20px;
 }
 
-#rightcolumn {
-    float: left;
-    width: 15%;
-    /*Width of right column in pixels*/
-    margin-left: -15%;
-    /*Set margin to that of -(RightColumnWidth)*/
-    background: #FDE95E;
+a {
+    color: #2de35f;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 5px;
 }
 
 #footer {
@@ -64,40 +68,28 @@ em {
     color: #FFFF80;
 }
 
-.innertube {
-    margin: 10px;
-    /*Margins for inner DIV inside each column (to provide padding)*/
-    margin-top: 0;
+#app {
+    background-color: green;
 }
 
 
 
-/* ####### responsive layout CSS ####### */
 
-@media (max-width: 840px) {
-    /* 1st level responsive layout break point- drop right column down*/
-    #rightcolumn {
+
+/*view ports*/
+
+@media (max-width: 1024px) {
+
+    .header {
         float: none;
         width: 100%;
-        margin-left: 0;
-        clear: both;
+        height: auto;
     }
 
-    #contentcolumn {
-        margin-right: 0;
-    }
-}
-
-@media (max-width: 600px) {
-    /* 2nd level responsive layout break point- drop left column down */
-    #leftcolumn {
+    .content {
         float: none;
         width: 100%;
-        clear: both;
-        margin-left: 0;
-    }
-
-    #contentcolumn {
-        margin-left: 0;
     }
 }
+
+@media (max-width: 640px) {}
