@@ -34,9 +34,15 @@ body {
 
 p {
     font-family: 'Tenali Ramakrishna', sans-serif;
+<<<<<<< HEAD
     padding: 10px;
     font-size: 16pt;
     text-indent: 10px;
+=======
+    padding: 30px;
+    font-size: 16pt;
+    text-indent: 20px;
+>>>>>>> b8d758319189d8f745eca6f9884bea6445492e3b
 }
 
 a {
@@ -47,12 +53,15 @@ a:hover {
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 #app {
     width: 100%;
     display: inline-block;
 }
 
 
+=======
+>>>>>>> b8d758319189d8f745eca6f9884bea6445492e3b
 img {
     width: 70%;
     height: auto;
@@ -61,10 +70,13 @@ img {
     padding-bottom: 5px;
 }
 
+<<<<<<< HEAD
 #caption {
     text-align: center;
 }
 
+=======
+>>>>>>> b8d758319189d8f745eca6f9884bea6445492e3b
 #footer {
     clear: left;
     width: 100%;
@@ -78,6 +90,7 @@ img {
     color: #FFFF80;
 }
 
+<<<<<<< HEAD
 
 
 
@@ -100,6 +113,11 @@ img {
 
 
 
+=======
+#app {
+    background-color: green;
+}
+>>>>>>> b8d758319189d8f745eca6f9884bea6445492e3b
 
 
 
