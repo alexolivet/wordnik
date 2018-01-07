@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>API exercise</title>
+    <!-- main css stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="header">
+            <div id="app">
+                <p>Click button to generate series of ajax calls:
+                    <input type="button" value="Update" id="startAjax" />
+                </p>
+                <p id="wordDump"></p>
+                <p id="wordDefinition"></p>
+                <figure id="result">
+                </figure>
+            </div>
+        </div>
+        <div class="content">
+            <p>Get a random word. Get the definition of the random word. Get a random image based on the definition of the random word</p>
+            <p><b>What are APIs?</b> Application Programming Interfaces (APIs) are constructs made available in programming languages to allow developers to create complex functionality more easily. They abstract more complex code away from you, providing some easier syntax to use in its place. As a real world example, think about the electricity supply in your house, apartment, or other dwelling. If you want to use an appliance in your house, you simply plug it into a plug socket and it works. You don't try to wire it directly into the power supply — to do so would be really inefficient and, if you are not an electrician, difficult and dangerous to attempt.</p>
+            <p>The Wordnik API lets you request definitions, example sentences, spelling suggestions, related words like synonyms and antonyms, phrases containing a given word, word autocompletion, random words, words of the day, and much more.</p>
+            <p>Of course Unsplash offers the full JSON API and this site is using it. The beauty of the Simple API comes down to making APIs easier to use for the general populous. Distributing API content using (the familiar technology) hyperlinks allows more people to take advantage of this technology.</p>
+        </div>
+        <div id="footer"><a href="http://www.elwebman.nl">Designed by elwebman.nl</a></div>
+    </div>
+    <!--jQuery Loaded-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script type="text/javascript" src="js/script_clean.js"></script>
+</body>
+
+</html>

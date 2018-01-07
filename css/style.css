@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #eee;
+    margin: 0;
+}
+
+#container {
+    height: 100%;
+}
+
+.header {
+    width: 50%;
+    float: left;
+    height: 100%;
+    background-color: #eee;
+    position: relative;
+    bottom: 0;
+}
+
+.content {
+    width: 50%;
+    background-color: #333;
+    float: right;
+    overflow: auto;
+    position: relative;
+    margin-bottom: 0;
+    color: #eee;
+}
+
+p {
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    padding: 10px;
+    font-size: 16pt;
+    text-indent: 10px;
+}
+
+a {
+    color: #2de35f;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#app {
+    width: 100%;
+    display: inline-block;
+}
+
+
+img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+#caption {
+    text-align: center;
+}
+
+#footer {
+    clear: left;
+    width: 100%;
+    background: black;
+    color: #FFF;
+    text-align: center;
+    padding: 4px 0;
+}
+
+#footer a {
+    color: #FFFF80;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*view ports*/
+
+@media (max-width: 1024px) {
+
+    .header {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {}
